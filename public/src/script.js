@@ -105,7 +105,7 @@
 	   		try {
 			    // var successful = document.execCommand('copy');
 			    var msg = document.execCommand('copy') ? 'successful' : 'unsuccessful';
-			    console.log('Copying Widget code was ' + msg + '. You may now paste into any html document. ');
+			    console.log('Copying widget code was ' + msg + '. You may now paste into any html document. ');
 			} catch (err) {
 			    console.log('Oops, something\'s going wrong here...');
 			}

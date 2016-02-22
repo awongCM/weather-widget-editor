@@ -26,7 +26,8 @@ var serverConfig = {
     baseURLEndPoint: '/weather-widget/api/',
     handlerBarsViewPath: '/views/server',
     publicWidgetScr: '/example/widget.js',
-    serverHost: getIPAddress()
+    //serverHost: getIPAddress()
+    serverHost: 'ec2-52-34-148-211.us-west-2.compute.amazonaws.com'
 };
 
 server.use(bodyParser.urlencoded({extended: false}));

@@ -154,6 +154,8 @@ gulp.task('mochaTestUnit',function() {
 
 gulp.task('dev',['sass', 'copyScripts', 'copyFonts', 'browserSync', 'watch']);
 
+gulp.task('build',['sass', 'copyScripts', 'copyFonts']);
+
 gulp.task('test', ['mochaTestUnit']);
 
 //Callback Functions
