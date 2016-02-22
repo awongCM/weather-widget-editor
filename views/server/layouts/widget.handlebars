@@ -1,0 +1,63 @@
+<div class="widget-container">
+	<h1 class="widget-title-heading">{{widget_title}}</h1>	
+	<div class="widget-city-heading-container">
+		<h2 class="widget-city-heading-temp">
+			{{widget_city}}
+			<span class="pull-right">{{widget_main}}</span>
+		</h2>
+	</div>
+
+	<div class="widget-temperature-details-container">
+		<div class="widget-temperature-details-section widget-time-section">
+			<h2 class="widget-temperature-details-heading">{{widget_current_time}}</h2>
+			<div class="widget-temperature-max-min">
+				<p class="widget-temperature-max-min-text">Max: {{widget_max}} {{#if_eq widget_units "metric"}}
+	    			 <i class="wi wi-celsius"></i>
+				{{else}}
+	    			 <i class="wi wi-fahrenheit"></i>
+				{{/if_eq}}</p>
+				<p class="widget-temperature-max-min-text">Min: {{widget_min}} {{#if_eq widget_units "metric"}}
+	    			 <i class="wi wi-celsius"></i>
+				{{else}}
+	    			 <i class="wi wi-fahrenheit"></i>
+				{{/if_eq}}</p>
+			</div>
+		</div>
+		<div class="widget-temperature-details-section widget-icon-section">
+			<div class="widget-icon-size">
+				<i class="{{widget_weather_icon}}"></i>	
+			</div>
+		</div>
+		<div class="widget-temperature-details-section widget-date-temperature-section">
+			<h2 class="widget-temperature-details-heading">
+				<span>
+					<i class="wi wi-thermometer"></i>
+				</span>
+				{{widget_temp}} <span>
+				{{#if_eq widget_units "metric"}}
+	    			 <i class="wi wi-celsius"></i>
+				{{else}}
+	    			 <i class="wi wi-fahrenheit"></i>
+				{{/if_eq}}
+				</span>
+			</h2>
+			<p class="widget-temperature-humidity-text">Humidity: {{widget_humidity}}%</p>
+			<div class="widget-temperature-wind">
+				{{#if_eq widget_showWind "true"}}
+					<h5 class="widget-temperature-wind-heading">Wind</h5>	
+					<p class="widget-temperature-wind-text">{{widget_speed}}
+						{{#if_eq widget_units "metric"}}
+						   meters/sec
+						{{else}}
+						   miles/sec
+						{{/if_eq}}
+					</p>
+					<p class="widget-temperature-wind-text">{{widget_deg}} deg</p>
+				{{/if_eq}}
+			</div>
+			<div class="widget-temperature-date-heading">
+				<span>{{widget_current_date}}</span>
+			</div>
+		</div>
+	</div>
+</div>

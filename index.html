@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script src="//our-cdn.com/shootitlive.load.js?project=13&client=greenfield[more URL encoded parameters]" async></script>
+	<script>
+		var s = document.createElement('script'); 
+  s.src = "//awesome-service.com/init.js";
+  s.async = true;
+  // This global is picked up by init.js whenever it loads
+  window.awesome_options = { project: 13, client: 'greenfield' };
+  document.body.appendChild(s);
+	</script>
+
+	<!-- or -->
+	<script type="text/javascript" id="dclg-impact-indicators-embedder-5b8cf3a4-b0f0-13e9-3737-d5a159268ae6" class="dclg-impact-indicators-async-script-loader">
+  (function() {
+    function async_load(){
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      var theUrl = 'myexpress_server/url:port/?withparameters';
+      s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + 'ref=' + encodeURIComponent(window.location.href);
+      
+      embedder.parentNode.insertBefore(s, embedder);
+    }
+    if (window.attachEvent)
+      window.attachEvent('onload', async_load);
+    else
+      window.addEventListener('load', async_load, false);
+  })();
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="col-lg-6">
+  	<h2 class="text-center">Weather Widget Editor</h2>
+      <form method="post" role="form" >
+         <div class="form-group">
+            <label for="title" class="control-label">Enter your widget title</label>
+            <input type="text" class="form-control" id="title" name="title"autocomplete="off" required/>
+         </div>
+         <div class="form-group">       
+            <label for="unit">Select unit</label>
+            <select class="form-control" id="unit" name="unit">
+              <option value="metric">Metric</option>
+              <option value="imperial">Imperial</option> 
+            </select>
+         </div>
+         <div class="form-group">
+            <div class="pull-left">
+               <input type="checkbox" id="showWind" name="showWind"/>
+               <label for="showWind" class="check">Show Wind?</label>
+            </div>
+            <button id="submit-widget" type="click" class="btn btn-success pull-right">Get Widget!</button>
+            <div class="clearfix"></div>
+         </div>
+      </form>
+  </div>
+  <div class="col-lg-6">
+    <h3 class="list-widgets-heading">Your list of widgets</h3>
+  	<div id="panel-widgets">
+      
+    </div>
+  </div>
+</div>

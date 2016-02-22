@@ -1,0 +1,115 @@
+//My custom style
+form{
+	text-align: center;
+}
+
+form > img {
+	text-align: center;
+}
+
+.form-group > label{
+	font-size: 32px;
+}
+
+.check {
+	font-size: 18px;
+}
+
+.list-widgets-heading{
+	display: none;
+}
+
+.list-widgets-heading.active{
+	display: block;
+}
+
+.widget-container{
+	height: 330px;
+	width: 480px;
+	background: #506173;
+	color: #fff;
+	margin: auto;
+	background: rgba(248,80,50,1);
+	background: -moz-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 5%, rgba(246,41,12,1) 22%, rgba(240,47,23,1) 28%, rgba(80,97,115,1) 50%, rgba(80,97,115,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(248,80,50,1)), color-stop(5%, rgba(241,111,92,1)), color-stop(22%, rgba(246,41,12,1)), color-stop(28%, rgba(240,47,23,1)), color-stop(50%, rgba(80,97,115,1)), color-stop(100%, rgba(80,97,115,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 5%, rgba(246,41,12,1) 22%, rgba(240,47,23,1) 28%, rgba(80,97,115,1) 50%, rgba(80,97,115,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 5%, rgba(246,41,12,1) 22%, rgba(240,47,23,1) 28%, rgba(80,97,115,1) 50%, rgba(80,97,115,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 5%, rgba(246,41,12,1) 22%, rgba(240,47,23,1) 28%, rgba(80,97,115,1) 50%, rgba(80,97,115,1) 100%);
+	background: linear-gradient(135deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 5%, rgba(246,41,12,1) 22%, rgba(240,47,23,1) 28%, rgba(80,97,115,1) 50%, rgba(80,97,115,1) 100%);
+
+}
+
+.widget-title-heading{
+	text-align: center;
+	padding-top: 17px;
+}
+
+.widget-city-heading-temp{
+	background: #02A8F3;
+	padding: 6px 15px;
+    margin: 0px 20px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.widget-temperature-details-heading{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.widget-temperature-details-container{
+	overflow: hidden;
+	padding: 20px 20px 0px;
+	max-height: 200px;
+}
+
+.widget-temperature-details-section{
+	display: inline-block;
+	
+}
+
+.widget-time-section{
+	float: left;
+	width: 30%;
+}
+
+.widget-icon-section{
+	float: left;
+	text-align: center;
+	width: 40%;
+	padding: 40px 10px;
+}
+
+.widget-date-temperature-section{
+	text-align: right;
+	width: 30%;
+}
+
+.widget-icon-size{
+	font-size: 90px;
+}
+
+.widget-temperature-max-min{
+	margin-top: 90px;
+}
+
+.widget-temperature-wind-heading{
+	margin: 0;
+}
+
+.widget-temperature-max-min-text,
+.widget-temperature-humidity-text,
+.widget-temperature-wind-text{
+	font-size: 14px;
+	margin: 0;
+}
+
+.widget-temperature-wind{
+	height: 50px;
+}
+
+.widget-temperature-date-heading{
+	font-weight: bold;
+	font-size: 23px;
+	margin-top: 20px;
+}
