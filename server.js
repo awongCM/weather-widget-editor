@@ -120,7 +120,7 @@ server.post(serverConfig.baseURLEndPoint, function (req, res) {
         widget_min: data.main.temp_min,
         widget_max: data.main.temp_max,
         widget_current_time: moment.unix(data.sys.sunset).format('LT'),//Unix timestamp on server
-        widget_current_date: moment.unix(data.sys.sunrise).format('DD MMM YYYY')//Unix timestamp on server
+        widget_current_date: moment.unix(data.sys.sunset).format('DD MMM YYYY')//Unix timestamp on server
     });
   });
 
