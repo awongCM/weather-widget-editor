@@ -56,7 +56,6 @@ var pathConfig = {
 var bowerConfig = {
   bootstrap_dir: './bower_components/bootstrap-sass',
   weather_icons_dir: './bower_components/weather-icons',
-  bootstrap_validator_dir: './bower_components/bootstrap-validator',
 
   public_dir: pathConfig.build_dir
 };
@@ -88,8 +87,7 @@ gulp.task('sass', function(){
 
 gulp.task('copyScripts', function() {
     var bowerScript = gulp.src([
-      bowerConfig.bootstrap_dir + '/assets/javascripts/bootstrap.min.js',
-      bowerConfig.bootstrap_validator_dir + '/dist/validator.min.js',
+      bowerConfig.bootstrap_dir + '/assets/javascripts/bootstrap.min.js'
     ])
     .pipe(gulp.dest(pathConfig.scripts.dest_1));
 

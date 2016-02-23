@@ -26,7 +26,7 @@ var serverConfig = {
     baseURLEndPoint: '/weather-widget/api/',
     handlerBarsViewPath: '/views/server',
     publicWidgetScr: '/example/widget.js',
-    //serverHost: getIPAddress()
+    // serverHost: getIPAddress()
     serverHost: 'ec2-52-34-148-211.us-west-2.compute.amazonaws.com'
 };
 
@@ -119,7 +119,7 @@ server.post(serverConfig.baseURLEndPoint, function (req, res) {
         widget_humidity: data.main.humidity,
         widget_min: data.main.temp_min,
         widget_max: data.main.temp_max,
-        widget_current_time: moment.unix(data.sys.sunset).format('LT'),//Unix timestamp on server
+        widget_current_time: moment.unix(data.sys.sunrise).format('LT'),//Unix timestamp on server
         widget_current_date: moment.unix(data.sys.sunset).format('DD MMM YYYY')//Unix timestamp on server
     });
   });
