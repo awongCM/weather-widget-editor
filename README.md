@@ -31,4 +31,4 @@ This following technologies are used in this assignment
 ##To test weather widget display
 1. Either you create a blank static html page on your local machine and paste the widget code.
 2. Or, use my `public.html` file if you want to test my gulp build locally.
-3. Use public online code publishing sites such as [CodePen](http://codepen.io). (only for HTTP support though).
+3. Or - lastly - use public online code publishing sites such as [CodePen](http://codepen.io). (only for HTTP support though).
