@@ -9,7 +9,7 @@ import {
 } from '@weather-widget/shared';
 import type { Request, Response } from 'express';
 import { config } from '../config.js';
-import { fetchCurrentWeather, toWeatherPayload } from '../services/openWeather.js';
+import { getWeatherPayload } from '../services/weatherService.js';
 
 function parseWidgetConfig(body: Record<string, unknown>): WidgetConfig | null {
   const title = body.title;
@@ -67,13 +67,8 @@ export async function postWeather(req: Request, res: Response): Promise<void> {
   }
 
   try {
-    const data = await fetchCurrentWeather(
-      config.openWeatherApiKey,
-      widget.lat,
-      widget.lon,
-      widget.units,
-    );
-    res.json(toWeatherPayload(widget, data));
+    const payload = await getWeatherPayload(config.openWeatherApiKey, widget);
+    res.json(payload);
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Weather lookup failed';
     res.status(502).json({ error: message });
