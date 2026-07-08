@@ -92,8 +92,10 @@ function injectStylesheet(apiBase: string): void {
   }
 }
 
+const loaderScript = getLoaderScript();
+
 async function loadWeatherWidget(): Promise<void> {
-  const script = getLoaderScript();
+  const script = loaderScript ?? getLoaderScript();
   const container = document.getElementById('weather-widget-content');
 
   if (!script || !container) {
@@ -126,4 +128,12 @@ async function loadWeatherWidget(): Promise<void> {
   }
 }
 
-void loadWeatherWidget();
+function startWidget(): void {
+  void loadWeatherWidget();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', startWidget);
+} else {
+  startWidget();
+}

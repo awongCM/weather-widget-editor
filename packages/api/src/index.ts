@@ -9,6 +9,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '../../..');
 const editorDist = path.join(repoRoot, 'apps/editor/dist');
 const embedDist = path.join(repoRoot, 'apps/embed/dist');
+const examplesDir = path.join(repoRoot, 'examples');
 
 export function createApp() {
   const app = express();
@@ -25,6 +26,7 @@ export function createApp() {
   app.post('/api/widgets/snippet', postSnippet);
 
   app.use('/embed', express.static(embedDist));
+  app.use('/examples', express.static(examplesDir));
   app.use(express.static(editorDist));
 
   app.get('/{*path}', (req, res, next) => {
