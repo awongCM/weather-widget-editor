@@ -1,0 +1,77 @@
+.ww-widget {
+  font-family: Inter, system-ui, sans-serif;
+  color: #e2e8f0;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  max-width: 28rem;
+}
+
+.ww-title {
+  margin: 0 0 1rem;
+  color: #7dd3fc;
+  font-size: 1.25rem;
+}
+
+.ww-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ww-city {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.ww-description,
+.ww-time {
+  margin: 0.25rem 0 0;
+  color: #94a3b8;
+  text-transform: capitalize;
+}
+
+.ww-temp-block {
+  text-align: right;
+}
+
+.ww-icon {
+  font-size: 2.5rem;
+  color: #fcd34d;
+}
+
+.ww-temp {
+  margin: 0.5rem 0 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.ww-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.ww-stat {
+  background: rgba(2, 6, 23, 0.45);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+
+.ww-stat span {
+  display: block;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.ww-stat-wide {
+  grid-column: span 2;
+}
+
+.ww-error {
+  color: #fda4af;
+  font-family: Inter, system-ui, sans-serif;
+}
