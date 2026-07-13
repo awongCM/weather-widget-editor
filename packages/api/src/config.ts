@@ -7,6 +7,9 @@ dotenv.config({ path: path.join(repoRoot, '.env') });
 
 export const config = {
   port: Number(process.env.PORT ?? 9090),
-  publicUrl: process.env.PUBLIC_URL ?? `http://localhost:${process.env.PORT ?? 9090}`,
+  publicUrl:
+    process.env.PUBLIC_URL ??
+    process.env.RENDER_EXTERNAL_URL ??
+    `http://localhost:${process.env.PORT ?? 9090}`,
   openWeatherApiKey: process.env.OPENWEATHER_API_KEY ?? '',
 };
